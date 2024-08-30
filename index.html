@@ -9,9 +9,11 @@
 <body>
     <header>
         <h1>User Quote Bot</h1>
-        <a href="#" class="nav-button" onclick="showPage('home')">Home</a>
-        <a href="#" class="nav-button" onclick="showPage('commands')">Commands</a>
-        <a href="#" class="nav-button" onclick="showPage('login')">Log In</a>
+        <nav>
+            <a href="#" class="nav-button" onclick="showPage('home')">Home</a>
+            <a href="#" class="nav-button" onclick="showPage('commands')">Commands</a>
+            <a href="#" class="nav-button" onclick="showPage('login')">Log In</a>
+        </nav>
     </header>
 
     <main id="main-content">
@@ -19,28 +21,28 @@
         <div id="home" class="page-content show">
             <h2>Welcome to User Quote Bot</h2>
             <p>Discover and manage your quotes with ease.</p>
-            <a href="https://discord.com/oauth2/authorize?client_id=1278815638600679505" class="auth-button gradient-border">Authorize Bot</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=https://YOUR_DOMAIN/callback&response_type=code&scope=identify%20email" class="auth-button gradient-border">Authorize Bot</a>
         </div>
 
         <!-- Login Page Content -->
         <div id="login" class="page-content">
             <h2>Log In with Discord</h2>
-            <a href="https://discord.com/oauth2/authorize?client_id=1278815638600679505" class="auth-button gradient-border">Log In with Discord</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&redirect_uri=https://YOUR_DOMAIN/callback&response_type=code&scope=identify%20email" class="auth-button gradient-border">Log In with Discord</a>
         </div>
 
         <!-- Commands Page Content -->
         <div id="commands" class="page-content">
             <h2>Bot Commands</h2>
             <div class="commands-box">
-                <h2>Random_Quote</h2>
+                <h3>Random_Quote</h3>
                 <p>Generates a random quote.</p>
             </div>
             <div class="commands-box">
-                <h2>quote</h2>
+                <h3>quote</h3>
                 <p>Displays a specific quote.</p>
             </div>
             <div class="commands-box">
-                <h2>quote message</h2>
+                <h3>quote message</h3>
                 <p>Quotes a specific message.</p>
             </div>
         </div>
