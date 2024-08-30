@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000000, #1e1e1e, #0e0e0e);
+    color: #ffffff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    background: #111;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #000000, #8a2be2);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin: 10px;
+}
+
+.nav-button:hover {
+    background: linear-gradient(135deg, #000000, #6a0dad);
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.auth-button {
+    display: inline-block;
+    padding: 15px 30px;
+    color: #ffffff;
+    background: linear-gradient(135deg, #000000, #8a2be2);
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+}
+
+.auth-button.gradient-border {
+    border: 2px solid;
+    border-image: linear-gradient(45deg, #ff0000, #00ff00, #0000ff);
+    border-image-slice: 1;
+}
+
+.auth-button:hover {
+    background: linear-gradient(135deg, #000000, #6a0dad);
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+}
+
+.page-content {
+    display: none;
+}
+
+.page-content.show {
+    display: block;
+}
+
+.commands-box {
+    margin: 20px auto;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+}
+
+.commands-box h2 {
+    margin-top: 0;
+}
+
+.commands-box p {
+    margin: 5px 0;
+}
